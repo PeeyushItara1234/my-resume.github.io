@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>MY-Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Peeyush Itara</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapes" data-bs-target="#navbarSupporetdContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#skills">My Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#work">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-3">
+        <section id="hero" class="text-gray-600 body-font">
+            <!-- Hero -->
+            <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+                <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                    <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Hi!
+                        <br class="hidden lg:inline-block">I'm Peeyush Itara
+                    </h1>
+                    <p class="mb-8 leading-relaxed">A fullstack web developer</p>
+                    <div class="flex justify-center">
+                        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">My cool resume</button>
+                    </div>
+                </div>
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                    <img class="object-cover object-center align-md-items-center rounded-circle w-75 h-75" alt="hero" src="data:image/jpeg;base64,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">
+
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="mt-4 p-4">
+            <!-- My-Skills -->
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-20">
+                    <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest">My Skill Set</h1>
+                </div>
+                <div class="flex flex-wrap -m-4">
+                    <div class="p-4 lg:w-1/2">
+                        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="data:image/png;base64,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">
+                        </div>
+                    </div>
+                    <div class="p-4 lg:w-1/2">
+                        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="data:image/png;base64,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">
+
+                        </div>
+                    </div>
+                    <div class="p-4 lg:w-1/2">
+                        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                            <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnRi_znVsc4QSvTQiFci8fdxiaZTsvidzh7A&usqp=CAU">
+
+                        </div>
+                    </div>
+                    <div class="p-4 lg:w-1/2">
+                        <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                            <img alt="team" class="flex- rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEX///9WPXxJK3TPythHKHJEInDj4Oj6+vtTOXpvXI7Y1N9NMXaso7z08vZCIG/GwNBSN3lPM3ikmrbt6/C3sMWDdJyYjKzCu81yYJDe2+VhSoSdkrCJe6F8bJdlUIePgqU/G25nU4ipoLrTztt9bZhdRoE3BmiTh6m6s8dd7xRCAAAFmElEQVR4nO2d4XaqOBCAARNFKREEFdTWte6uff8nXDie7tme69CZ4C0z2fn+05vvJiaQzEyiSFEURVEURVEURVEURVGUHyafX2c8uM7zp9tV9ba0JuGCseW2rp7ot166rIh5UWRuuX6WX5ykU/s8JE3iZzhWjeHp15OaZvRYXVtuw/MrhR3ZjRs3tcK3uM0YwZ2Zuv0IzG5ED0oQ7BS9e3HNf4jecZ6/xcpO3XI01m9GbXjPov+laHwE1zJ+hHeMzziN+S70v5LGHl2YTN1qEgm9E5eSurDrxCVVsJKyUnziqNNpnU3dZCJZTTTcylkq7hRbomE5dYvJlDTBXM77zCeWtnczl7Tc3zFzkuFV1mrYk1xJhjOBhjM1VEPuqKEa8kcN1ZA/aqiGiH/BemFMkmRlMX5X6LcbJu3Ch7yar9b1ZntwJilHaf52Q+Ln2a/M97vYZv6S/A17qvrifSIrw7BjfnN+e0RiDKMoPzufsSrIsOvHN4/dWlGGUXSk7/UJM4z25FMFaYbRjKoozjDaEweqPMPoSJtuBBpGB9KiIdGwJf0UJRpGJ8obnEhD0kG0SMPoldCJMg0pASEyDSPCmjidYbt6TFstvm/HK37BmM7wzT4OtzfGJs3xm2a94Ff96QyHQo+KMrG7ofN3wlk0T8Oe0r3A7ajw8QR8DbtHB0Jh8CsiZ8M4OYMNwS+IrA1jC7buDT2Z8jaEw0ObQAxjAwXD4N/bmBuWx9ANwQBYfCAvc0MwshD/nc/d0AFPh/BOM2i4wH9ccDc0jx9uw3hr60gPjx/+kP5t8S9QlPY5lLe2OAO+L0TsYqAM3eOnKaHKvA2h3DNKTgRvwz/ah48K2S9FGNr3x4+S0lo4G0LZ2FfS+RpbwzQpgaYtaDEZPA2LzMRgRhYxS3fC/VIHxrSlf74/nmJ6TsR4jOkMc5DBFpypLZB2bvFKDx0UZVj9RY/8EmX44hP2Jchw9eYVoCzGsFr+7Rd/KcYwyveNV/ylHMOO6ubo/SjKsOvIE3myEWbYzTfUBUOcYffaRsu2FmjYLYuhG9LCaEUaRh8i4mlGcZRwbjGOi4Dzw/oF5mP23f8LfrttOsNLksEkxl3eBy3fsZ/6PPdpetLSXoYah134+Rr2kraBtzSw1Y5YG/ZFOldgW5CvNswNwY39jh1unLI3jDMo3HSF60T+huUNakwofRg7aLbBHQQLMAQrru1RjRFgCJboxJXlEmAYW6g1qC8MCYbgn0A9LcEQrEeGOmcTYQjVIEVleIkw3AN/4oZZEUUbHoMxhEZpMIYG+r4IxhCsz3kLZaZJodagIocEGJbgHQeoPyHAEIhP7EDtY/A3LE9QY3Alf9kbpuA3frQK4usphccoMpGUuWGZweFfyGRg1oaFOw1kPSNzLtgaFmXizoP7+rhNDH653Oh0buxUxS8fH5uS3yJPSaWeH+IzEMUarrAH3WIN0QmIUg036IYINSQUUpJpmBOi2WUaHkTkPY0AH2oi03DxRgoylWc4L6TkzHhSU0NohRlWy7AzShbHsOO8FxsTdKx+ew66FnS7iU249bzb+pSYEYXnudbVX+RVO/vYnA7OjLy+ne3dCP3lCDLuRpgcNVRD/qihGvJHDdWQP2r4vzOkFNliAvE+4PDvdA7/Xu7w71anFRLjAFR5EQSb9ccGMOMGglTujgOuIhoSAl9ZAJZahqFcD8IAMAp+gFhSJ8JF3Yc6UdKibzy6kFzVb0rAxL5hKjnvNZY8kd5ZS1kxnNcY7dnI+CkaoP4php0ERQPmaaB6kf9AhSrYYll730D8MxTW+zf4SdUYvkt/ahrPWfRrN8YJT8c0iUd34Kfj0o08oH0+ReaWz/LrqeptaQ0UdP/jGFtu62eMz6/k8+uMB9c5cU9GURRFURRFURRFURRFUZTx/AOd/567YTe57gAAAABJRU5ErkJggg==">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="work" class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-20">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">My Best Work</h1>
+                </div>
+                <div class="flex flex-wrap -m-4">
+                    <div class="lg:w-1/3 sm:w-1/2 p-4">
+                        <div class="flex relative">
+                            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/600x360">
+                            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+                                <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4">
+                        <div class="flex relative">
+                            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/601x361">
+                            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+                                <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4">
+                        <div class="flex relative">
+                            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/603x363">
+                            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+                                <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4">
+                        <div class="flex relative">
+                            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/602x362">
+                            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Neptune</h1>
+                                <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4">
+                        <div class="flex relative">
+                            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/605x365">
+                            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Holden Caulfield</h1>
+                                <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/3 sm:w-1/2 p-4">
+                        <div class="flex relative">
+                            <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/606x366">
+                            <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">THE SUBTITLE</h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Alper Kamu</h1>
+                                <p class="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <!-- Contact-Us -->
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Me</h1>
+                </div>
+                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                    <div class="flex flex-wrap -m-2">
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                                <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-1/2">
+                            <div class="relative">
+                                <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                                <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                                <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <scrip src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 " crossorigin="anonymous ">
+        </script>
+</body>
+
+</html>
